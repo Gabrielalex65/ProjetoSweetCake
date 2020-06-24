@@ -2,20 +2,39 @@ package model;
 
 import java.util.Date;
 
-import javax.swing.JOptionPane;
-
 public class Pedido {
-	String status;
-	Double valorPedido;
-	Date dataEntrega;
+	private String status;
+	private Double valorPedido;
+	private Date dataEntrega;
 	
 	public Pedido(String status, Double valorPedido, Date dataEntrega) {
-		this.status = status;
-		this.valorPedido = valorPedido;
-		this.dataEntrega = dataEntrega;
+		this.status = "";
+		this.valorPedido = null;
+		this.dataEntrega = null;
 	}
 	
-	///comentario atoa
+	public String getStatus() {
+		return status;
+	}
 	
-		
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	public double getValorPedido() {
+		return valorPedido;
+	}
+	
+	public void setValorPedido(Double valorPedido) {
+		this.valorPedido = valorPedido;
+	}
+	
+	public Date getDataEntrega() {
+		return dataEntrega;
+	}
+	
+	public void setDataEntrega(Date dataEntrega) {
+		this.dataEntrega = dataEntrega;
+	}
+			
 }
